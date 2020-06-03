@@ -21,6 +21,7 @@
     "node": true
   },
   "rules": {
+    "no-alert": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-uses-vars": "error"
   }
