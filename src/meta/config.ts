@@ -12,7 +12,7 @@ module.exports = {
     twitter: '',
     linkedIn: '',
   },
-  appIcon: 'content/assets/images/app-icon.png',
+  appIcon: 'src/assets/images/app-icon.png',
   backgroundColor: '#663399',
   themeColor: '#663399',
 }

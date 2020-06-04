@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const config = require('./content/meta/config')
+const config = require('./src/meta/config.ts')
 
 module.exports = {
   /* Your site config here */
@@ -32,5 +32,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-tslint',
   ],
 }

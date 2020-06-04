@@ -1,9 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/common/layout'
-import SEO from '../components/common/seo'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+
+interface Props {
+  location: Location
+  data: {
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    }
+  }
+}
 
 export const pageQuery = graphql`
   query {
@@ -15,7 +25,7 @@ export const pageQuery = graphql`
   }
 `
 
-const NotFoundPage = ({ data, location }) => {
+const NotFoundPage = ({ data, location }: Props) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
@@ -25,17 +35,6 @@ const NotFoundPage = ({ data, location }) => {
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
   )
-}
-
-NotFoundPage.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.object,
-  }).isRequired,
-  location: PropTypes.string,
-}
-
-NotFoundPage.defaultProps = {
-  location: '',
 }
 
 export default NotFoundPage
