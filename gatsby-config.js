@@ -4,16 +4,17 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const config = require('./src/data/config')
+const config = require('./content/meta/config')
 
 module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: config.title,
     description: config.description,
-    url: config.url,
+    author: config.author,
+    siteUrl: config.siteUrl,
     appIcon: config.appIcon,
-    siteLanguage: config.siteLanguage,
+    social: config.social,
   },
   plugins: [
     {
@@ -24,12 +25,12 @@ module.exports = {
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'standalone',
+        display: 'minimal-ui',
         icon: config.appIcon,
         crossOrigin: `use-credentials`,
       },
     },
-    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
   ],
 }

@@ -1,13 +1,22 @@
 import React from 'react'
-import Layout from '../components/common/layout'
-import SEO from '../components/common/seo'
+import PropTypes from 'prop-types'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Home from './home'
 
-export default function App() {
+const App = ({ location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO />
       <Home />
     </Layout>
   )
 }
+
+App.propTypes = {
+  location: PropTypes.shape({}).isRequired,
+}
+
+App.defaultProps = {}
+
+export default App
