@@ -1,0 +1,9 @@
+* {
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+  background-color: $background-color;
+  overflow-x: hidden;
+}

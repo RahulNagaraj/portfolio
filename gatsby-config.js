@@ -17,6 +17,7 @@ module.exports = {
     social: config.social,
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -30,9 +31,9 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
     'gatsby-plugin-tslint',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
   ],
 }

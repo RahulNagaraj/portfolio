@@ -1,0 +1,51 @@
+// Montserrat
+@include font-face(
+  'Montserrat-Light',
+  '../fonts/Montserrat-Light',
+  300,
+  normal,
+  ttf
+);
+
+@include font-face(
+  'Montserrat-Regular',
+  '../fonts/Montserrat-Regular',
+  400,
+  normal,
+  ttf
+);
+
+@include font-face(
+  'Montserrat-Medium',
+  '../fonts/Montserrat-Medium',
+  500,
+  normal,
+  ttf
+);
+
+@include font-face(
+  'Montserrat-Bold',
+  '../fonts/Montserrat-Bold',
+  700,
+  normal,
+  ttf
+);
+
+// OpenSans
+@include font-face(
+  'OpenSans-Light',
+  '../fonts/OpenSans-Light',
+  300,
+  normal,
+  ttf
+);
+
+@include font-face(
+  'OpenSans-Regular',
+  '../fonts/OpenSans-Regular',
+  400,
+  normal,
+  ttf
+);
+
+@include font-face('OpenSans-Bold', '../fonts/OpenSans-Bold', 700, normal, ttf);

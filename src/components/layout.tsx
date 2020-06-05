@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import '../assets/scss/main.scss'
 
 interface Props {
   location: Location
